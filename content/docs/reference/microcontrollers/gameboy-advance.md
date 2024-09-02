@@ -43,4 +43,13 @@ You can now use the GBA file with your emulator or flash it onto your physical h
 
 ## Flashing
 
-Information needed here...
+Programs will need to be flashed onto a GBA reproduction cartridge.
+You can purchase reproduction cartridges from a site like [inside gadgets](https://shop.insidegadgets.com/?post_type=product&filter_flash-carts=gba), though there are other retailers that carry them as well.
+
+There are a couple pieces of hardware that can be used to flash your games onto a reproduction cartridge.
+* [GBxCart RW](https://www.gbxcart.com/)
+* [Joey Jr](https://bennvenn.myshopify.com/collections/game-cart-to-pc-interface/products/usb-gb-c-cart-dumper-the-joey-jr)
+
+Both of these tools use [FlashGBX](https://github.com/lesserkuma/FlashGBX/tree/4.2) for flashing cartridges.
+Once you have installed FlashGBX, insert a reproduction cart into your hardware flasher of choice and plug it into your computer.
+FlashGBX has a GUI you can then use to write your program onto the cart.

@@ -1,9 +1,9 @@
 ---
-title: "Seeed Seeeduino XIAO"
+title: "Seeed Studio XIAO SAMD21 aka Seeeduino XIAO"
 weight: 3
 ---
 
-The [Seeed Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) is a tiny ARM development board based on the Atmel [ATSAMD21G18](https://www.microchip.com/wwwproducts/en/ATSAMD21G18) family of SoC.
+The [Seeed Seeeduino XIAO, which has been renamed to Seeed Studio XIAO SAMD21](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) is a tiny ARM development board based on the Atmel [ATSAMD21G18](https://www.microchip.com/wwwproducts/en/ATSAMD21G18) family of SoC.
 
 ## Interfaces
 

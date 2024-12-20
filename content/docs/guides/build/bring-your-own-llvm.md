@@ -26,19 +26,21 @@ Using a system-installed version of LLVM depends on your system, of course.
 
 For **Debian** or **Ubuntu** you can install LLVM by adding a new apt repository. For more information about this method, see [apt.llvm.org](https://apt.llvm.org/). *Before copying the command below, please replace `xxxxx` with your distribution's codename*.
 
-| Distro | Version | Codename |
-|--------|------- |-----------|
-| Ubuntu | 18.04  | `bionic`  |
-| Ubuntu | 20.04  | `focal`   |
-| Ubuntu | 20.10  | `groovy`  |
-| Ubuntu | 21.04  | `hirsute` |
-| Ubuntu | 22.04  | `jammy`   |
-| Debian | 10     | `buster`  |
-| Debian | 11     | `bullseye`|
-| Debian | sid    | `unstable`|
+| Distro | Version | Codename  |
+|--------|------- |------------|
+| Ubuntu | 20.04  | `focal`    |
+| Ubuntu | 22.04  | `jammy`    |
+| Ubuntu | 23.04  | `lunar`    |
+| Ubuntu | 23.10  | `mantic`   |
+| Ubuntu | 24.04  | `noble`    |
+| Ubuntu | 24.10  | `oracular` |
+| Debian | 10     | `buster`   |
+| Debian | 11     | `bullseye` |
+| Debian | 12     | `bookworm` |
+| Debian | sid    | `unstable` |
 
 ```shell
-echo 'deb http://apt.llvm.org/xxxxx/ llvm-toolchain-xxxxx-17 main' | sudo tee /etc/apt/sources.list.d/llvm.list
+echo 'deb http://apt.llvm.org/xxxxx/ llvm-toolchain-xxxxx-18 main' | sudo tee /etc/apt/sources.list.d/llvm.list
 ```
 
 After adding the apt repository for your distribution you may install the LLVM toolchain packages:
@@ -46,7 +48,7 @@ After adding the apt repository for your distribution you may install the LLVM t
 ```shell
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install clang-17 llvm-17-dev lld-17 libclang-17-dev
+sudo apt-get install clang-18 llvm-18-dev lld-18 libclang-18-dev
 ```
 
 #### MacOS
@@ -100,7 +102,7 @@ The `go install` command will build the `tinygo` executable and store it to your
     ```
 
 ### Debian LLVM repository manual addition
-If `sudo apt-get install clang-xx llvm-xx-dev lld-xx libclang-xx-dev` does not work, where `xx` is the LLVM version required by the TinyGo branch you are building i.e: 17, please try manually adding the repository. Run the following command and try the steps above again.
+If `sudo apt-get install clang-xx llvm-xx-dev lld-xx libclang-xx-dev` does not work, where `xx` is the LLVM version required by the TinyGo branch you are building i.e: 18, please try manually adding the repository. Run the following command and try the steps above again.
 ```shell
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 ```
